@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>환영합니다.</title>
+  <link rel="icon" href="https://i.ibb.co/ZNxTRxN/image.png">
+  <style>
+    
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .enter-img {
+      text-align: center;
+      margin-top: -10vh;
+      opacity: 0; 
+      transform: translateY(30px); 
+      transition: opacity 1s ease-in, transform 0.5s ease-in; 
+    }
+
+    .enter-img.visible {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+
+    .enter-img img {
+      width: 50vw; 
+    }
+
+    .insta img {
+      opacity: 0.5;
+      width: 3vw;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="enter-img fade-in" id="LogoImage">
+    <a href="main_page.html">
+      <img src="https://i.ibb.co/0mFWL59/1.png" alt="Entrance Image">
+    </a>
+
+  </div>
+
+  
+  <script>
+    const imageElement = document.querySelector('#LogoImage');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(imageElement);
+  </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대밤연의 가치</title>
+    <link rel="icon" href="https://i.ibb.co/ZNxTRxN/image.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+      * {
+          box-sizing: border-box;
+      }
+
+      .flex-container {
+        padding: 50px auto;
+        display: flex;
+        flex-wrap: wrap; 
+        text-align: left;
+        font-size: 18px;
+        width: 800px; 
+        margin: 0 auto; 
+      }
+
+      .page-image img {
+        border-radius: 20px;
+      }
+
+      .page-image {
+        margin-bottom: 20px;
+        flex: 50%; 
+      }
+
+      .text {
+        flex: 30%; 
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+
+      .text h1 {
+        font-weight: 800;
+      }
+
+      @media (max-width: 800px) {
+          .page-image, .text {
+              flex: 100%; 
+          }
+          .flex-container {
+              width: 65%; 
+              height: auto; 
+          }
+      }
+    </style>
+    
+    <script src="script.js" defer></script>
+  </head>
+<body>
+
+    <!-- (1) 로고 이미지 -->
+    <div class="logo-img fade-in" style="line-height:50%;" id="logoImage">
+      <a href="main_page.html">
+        <img src="https://i.ibb.co/7QY86wt/image.png" alt="Logo Image">
+      </a>
+      <hr width="100%" size=0.1mm color="black">
+      <br>
+    </div>
+    <!-- (1) 로고 이미지 끝-->
+
+    <!-- (2) 설명 부분 -->
+  <div class="flex-container">
+
+    <div class="page-image">
+      <img src="/imagefile/image(1).jpg" style="float: left; width: 100%; height: auto;">
+    </div>
+
+    <div class="text">
+      <h1 style="margin: 0;">🚩 대밤연의 가치</h1>
+      <p> 대학생밤샘연대는 학업, 과제, 취업 준비 등으로 매일 밤을 지새우는 대학생들의 삶을 이해하고 함께합니다. 혼자 견디는 고된 시간이 아닌, 서로의 경험을 공유하고 위로받는 공동체로서 존재합니다. </p>
+      <p> 밤샘은 단순히 시간을 버티는 행위가 아닙니다. 자신의 꿈과 목표를 이루기 위해 최선을 다하는 노력의 순간입니다. 대학생밤샘연대는 그 노력을 존중하며, 작은 성취도 축하받을 수 있는 공간을 만듭니다. </p> 
+      <p> 밤샘을 단순히 힘든 일로만 여기지 않고, 이를 유머와 창의성으로 풀어내는 태도를 지향합니다. 치열한 현실 속에서도 웃음을 잃지 않고, 스스로의 열정을 긍정하는 것이 대학생밤샘연대가 지향하는 문화입니다.</p>
+    </div>
+
+  </div>
+    <!-- (2) 설명 부분 끝-->
+</body>
+</html>
