@@ -11,9 +11,9 @@
 
   // (2) 이미지 슬라이드
   const imageUrls = [
-    "https://i.ibb.co/R6JvBNZ/image.jpg",
-    "https://i.ibb.co/7NT7XcX/2.jpg",
-    "https://i.ibb.co/C2hx3Py/3.jpg"
+    "https://ibb.co/C5zPyzV9",
+    "https://ibb.co/LXcPbV2R",
+    "https://ibb.co/8L0wwqB2"
   ];
 
   const slidesContainer = document.getElementById('slidesContainer');
